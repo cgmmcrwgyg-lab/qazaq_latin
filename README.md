@@ -60,7 +60,6 @@ File: `qazaq_latin_n.keyman-touch-layout`
 This is the visual layout — what letters are on which buttons, in which order.
 
 Example — a key looks like this:
-```json
 {"id": "K_AUML", "text": "Ä"}
 
 - `id` = which key it is (don't change this unless you know what you're doing)
@@ -130,5 +129,3 @@ Made for writing Kazakh in Latin script. Qazaq Latin N.
 
 
 Paste → Commit → done.
-
-Want me to also add a one-line install link at the very top once your build is green, so people can just tap it instead of going through Actions?
