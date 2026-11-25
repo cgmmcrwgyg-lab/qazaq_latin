@@ -1,5 +1,7 @@
 name: Build Qazaq Keyboard
 on: [push]
+permissions:
+  contents: write
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -70,3 +72,13 @@ jobs:
           path: |
             build/qazaq_latin_n.kmp
             qazaq_latin_n.kmp
+
+      - name: Release latest
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: latest
+          name: Latest build
+          files: |
+            build/qazaq_latin_n.kmp
+            qazaq_latin_n.kmp
+          fail_on_unmatched_files: false
