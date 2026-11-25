@@ -24,13 +24,27 @@ jobs:
           cp /tmp/template/qazaq_latin_n/qazaq_latin_n.kpj ./ || cp /tmp/template/qazaq_latin_n.kpj ./
           mkdir -p source
           cp /tmp/template/qazaq_latin_n/source/* ./source/ 2>/dev/null || cp /tmp/template/qazaq_latin_n/source/* . 2>/dev/null || true
-          # Overwrite template keyboard with YOUR keyboard
           cp qazaq_latin_n.kmn ./source/qazaq_latin_n.kmn
           cp qazaq_latin_n.keyman-touch-layout ./source/qazaq_latin_n.keyman-touch-layout
-          # Files kmc was complaining about
           echo "# Qazaq Latin N" > LICENSE.md
           echo "MIT License - Qazaq Translit" >> LICENSE.md
           ls -R
+
+      - name: Patch project for iPhone-only build
+        run: |
+          echo "--- BEFORE PATCH ---"
+          cat source/qazaq_latin_n.kps
+          # 1. Remove the .kvk (desktop visual keyboard) requirement - we don't need it for iPhone
+          sed -i '/\.kvk/d' source/qazaq_latin_n.kps
+          # 2. Remove .kvks reference if present
+          sed -i '/\.kvks/d' source/qazaq_latin_n.kps
+          # 3. Add KeyboardVersion store to .kmn if missing (fixes KM0400A warning)
+          grep -q "KeyboardVersion" source/qazaq_latin_n.kmn || sed -i '1a store(&KeyboardVersion) "1.0"' source/qazaq_latin_n.kmn
+          echo "--- AFTER PATCH ---"
+          cat source/qazaq_latin_n.kps
+          echo "--- KMN HEAD ---"
+          head -20 source/qazaq_latin_n.kmn
+          ls -R source/
 
       - name: Build project
         run: kmc build qazaq_latin_n.kpj
