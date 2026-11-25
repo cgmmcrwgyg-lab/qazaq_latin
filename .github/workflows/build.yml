@@ -10,12 +10,14 @@ jobs:
           node-version: 20
       - run: npm install -g @keymanapp/kmc
       - run: kmc build qazaq_latin_n.kmn -o qazaq_latin_n.kmx
-      - run: ls -la
+      - run: |
+          mkdir -p package
+          cp qazaq_latin_n.kmx package/
+          cp qazaq_latin_n.js package/
+          cp qazaq_latin_n.keyman-touch-layout package/
+          cp kmp.json package/
+          cd package && zip -r ../qazaq_latin_n.kmp . && cd ..
       - uses: actions/upload-artifact@v4
         with:
-          name: qazaq_latin_n-build
-          path: |
-            qazaq_latin_n.kmx
-            qazaq_latin_n.js
-            qazaq_latin_n.keyman-touch-layout
-            qazaq_latin_n.kmn
+          name: qazaq_latin_n.kmp
+          path: qazaq_latin_n.kmp
