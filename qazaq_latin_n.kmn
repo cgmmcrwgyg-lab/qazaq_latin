@@ -3,7 +3,6 @@ store(&NAME) "Qazaq Latin N"
 store(&KEYBOARDVERSION) "1.0"
 store(&TARGETS) "any"
 store(&COPYRIGHT) "Qazaq Translit"
-store(&AUTHOR) "Qazaq Translit"
 store(&LAYOUTFILE) "qazaq_latin_n.keyman-touch-layout"
 
 begin Unicode > use(Main)
