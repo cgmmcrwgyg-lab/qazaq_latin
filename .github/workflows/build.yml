@@ -9,8 +9,13 @@ jobs:
         with:
           node-version: 20
       - run: npm install -g @keymanapp/kmc
-      - run: kmc build qazaq_latin_n.kmn --out-path build/
+      - run: kmc build qazaq_latin_n.kmn -o qazaq_latin_n.kmx
+      - run: ls -la
       - uses: actions/upload-artifact@v4
         with:
-          name: qazaq_latin_n.kmp
-          path: build/
+          name: qazaq_latin_n-build
+          path: |
+            qazaq_latin_n.kmx
+            qazaq_latin_n.js
+            qazaq_latin_n.keyman-touch-layout
+            qazaq_latin_n.kmn
