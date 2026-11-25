@@ -1,4 +1,4 @@
-
+> 📲 **iPhone install:** [Tap here to install Qazaq Latin N](https://github.com/cgmmcrwgyg-lab/qazaq_latin/releases/latest/download/qazaq_latin_n.kmp) → tap **Open in Keyman** → **Install**
 # Qazaq Latin 🇰🇿
 
 A custom iPhone keyboard for writing Kazakh in Latin script.
