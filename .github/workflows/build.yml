@@ -32,18 +32,30 @@ jobs:
 
       - name: Patch project for iPhone-only build
         run: |
-          echo "--- BEFORE PATCH ---"
-          cat source/qazaq_latin_n.kps
-          # 1. Remove the .kvk (desktop visual keyboard) requirement - we don't need it for iPhone
-          sed -i '/\.kvk/d' source/qazaq_latin_n.kps
-          # 2. Remove .kvks reference if present
-          sed -i '/\.kvks/d' source/qazaq_latin_n.kps
-          # 3. Add KeyboardVersion store to .kmn if missing (fixes KM0400A warning)
-          grep -q "KeyboardVersion" source/qazaq_latin_n.kmn || sed -i '1a store(&KeyboardVersion) "1.0"' source/qazaq_latin_n.kmn
-          echo "--- AFTER PATCH ---"
-          cat source/qazaq_latin_n.kps
-          echo "--- KMN HEAD ---"
-          head -20 source/qazaq_latin_n.kmn
+          python3 - << 'PY'
+          import xml.etree.ElementTree as ET, pathlib
+          p = pathlib.Path("source/qazaq_latin_n.kps")
+          tree = ET.parse(p)
+          root = tree.getroot()
+          # Remove any <File> that references .kvk / .kvks - delete the whole block, not just one line
+          for parent in root.iter():
+              for child in list(parent):
+                  if child.tag == "File":
+                      text = "".join(child.itertext())
+                      if ".kvk" in text:
+                          parent.remove(child)
+          tree.write(p, encoding="utf-8", xml_declaration=True)
+          print(p.read_text())
+          # Add KeyboardVersion if missing
+          kmn = pathlib.Path("source/qazaq_latin_n.kmn")
+          t = kmn.read_text()
+          if "KeyboardVersion" not in t:
+              lines = t.splitlines()
+              lines.insert(1, 'store(&KeyboardVersion) "1.0"')
+              kmn.write_text("\n".join(lines)+"\n")
+          print("--- KMN HEAD ---")
+          print("\n".join(kmn.read_text().splitlines()[:20]))
+          PY
           ls -R source/
 
       - name: Build project
