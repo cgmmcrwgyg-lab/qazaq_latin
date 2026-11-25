@@ -1,0 +1,62 @@
+{
+  "phone": {
+    "layers": [
+      {
+        "id": "default",
+        "row": [
+          {
+            "id": 1,
+            "key": [
+              {"id": "K_A", "text": "A"},
+              {"id": "K_AUML", "text": "Ä"},
+              {"id": "K_B", "text": "B"},
+              {"id": "K_D", "text": "D"},
+              {"id": "K_E", "text": "E"},
+              {"id": "K_F", "text": "F"},
+              {"id": "K_G", "text": "G"},
+              {"id": "K_GBREVE", "text": "Ğ"}
+            ]
+          },
+          {
+            "id": 2,
+            "key": [
+              {"id": "K_H", "text": "H"},
+              {"id": "K_I_DOTTED", "text": "İ"},
+              {"id": "K_I", "text": "I"},
+              {"id": "K_J", "text": "J"},
+              {"id": "K_K", "text": "K"},
+              {"id": "K_L", "text": "L"},
+              {"id": "K_M", "text": "M"},
+              {"id": "K_N", "text": "N"}
+            ]
+          },
+          {
+            "id": 3,
+            "key": [
+              {"id": "K_NTILDE", "text": "Ñ"},
+              {"id": "K_O", "text": "O"},
+              {"id": "K_OUML", "text": "Ö"},
+              {"id": "K_P", "text": "P"},
+              {"id": "K_Q", "text": "Q"},
+              {"id": "K_R", "text": "R"},
+              {"id": "K_S", "text": "S"},
+              {"id": "K_SCED", "text": "Ş"}
+            ]
+          },
+          {
+            "id": 4,
+            "key": [
+              {"id": "K_T", "text": "T"},
+              {"id": "K_U", "text": "U"},
+              {"id": "K_UMACRON", "text": "Ū"},
+              {"id": "K_UUML", "text": "Ü"},
+              {"id": "K_V", "text": "V"},
+              {"id": "K_Y", "text": "Y"},
+              {"id": "K_Z", "text": "Z"}
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
