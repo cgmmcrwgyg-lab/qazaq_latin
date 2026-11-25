@@ -51,7 +51,7 @@ jobs:
           # Add KeyboardVersion if missing
           kmn = pathlib.Path("source/qazaq_latin_n.kmn")
           t = kmn.read_text()
-          if "KeyboardVersion" not in t:
+          if "keyboardversion" not in t.lower():
               lines = t.splitlines()
               lines.insert(1, 'store(&KeyboardVersion) "1.0"')
               kmn.write_text("\n".join(lines)+"\n")
