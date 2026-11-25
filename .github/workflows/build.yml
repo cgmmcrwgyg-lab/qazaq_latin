@@ -9,14 +9,27 @@ jobs:
         with:
           node-version: 20
       - run: npm install -g @keymanapp/kmc
-      - run: kmc build qazaq_latin_n.kmn -o qazaq_latin_n.kmx
       - run: |
-          mkdir -p package
-          cp qazaq_latin_n.kmx package/
-          cp qazaq_latin_n.js package/
-          cp kmp.json package/
-          cd package && zip -r ../qazaq_latin_n.kmp . && cd ..
+          # Let kmc create a correct project structure
+          mkdir -p /tmp/template
+          cd /tmp/template
+          kmc generate keyman-keyboard qazaq_latin_n --name "Qazaq Latin N" --language kk || kmc generate keyman-keyboard qazaq_latin_n
+          ls -R
+      - run: |
+          # Copy the generated project files into our repo
+          cp /tmp/template/qazaq_latin_n/qazaq_latin_n.kpj ./ || cp /tmp/template/qazaq_latin_n.kpj ./
+          mkdir -p source
+          cp /tmp/template/qazaq_latin_n/source/qazaq_latin_n.kps ./source/ 2>/dev/null || cp /tmp/template/qazaq_latin_n/source/*.kps ./source/ 2>/dev/null || true
+          cp /tmp/template/qazaq_latin_n/source/*.htm ./source/ 2>/dev/null || true
+          # Overwrite template keyboard with YOUR keyboard
+          cp qazaq_latin_n.kmn ./source/qazaq_latin_n.kmn
+          cp qazaq_latin_n.keyman-touch-layout ./source/qazaq_latin_n.keyman-touch-layout
+          ls -R
+      - run: kmc build qazaq_latin_n.kpj
+      - run: ls -R build || ls -R
       - uses: actions/upload-artifact@v4
         with:
           name: qazaq_latin_n.kmp
-          path: qazaq_latin_n.kmp
+          path: |
+            build/qazaq_latin_n.kmp
+            qazaq_latin_n.kmp
