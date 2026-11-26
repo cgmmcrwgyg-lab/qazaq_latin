@@ -1,25 +1,86 @@
-> 📲 **iPhone install:** [Tap here to install Qazaq Latin N](https://github.com/cgmmcrwgyg-lab/qazaq_latin/releases/latest/download/qazaq_latin_n.kmp) → tap **Open in Keyman** → **Install**
-# Qazaq Latin 🇰🇿
+
+
+> 📲 **iPhone install:** [Tap here to install Qazaq](https://github.com/cgmmcrwgyg-lab/qazaq_latin/releases/latest/download/qazaq.kmp) → tap **Open in Keyman** → **Install**
+# Qazaq 🇰🇿
 
 A custom iPhone keyboard for writing Kazakh in Latin script.
 
 Direct keys — what you press is what you get:
 Press `Ä` → you get `Ä`. Press `Ğ` → you get `Ğ`. No conversion, no tricks.
 
-### The alphabet
+### The layout
 
 
-A Ä B D E F G Ğ
-H İ I J K L M N
-Ñ O Ö P Q R S Ş
-T U Ū Ü V Y Z
+q w e r t y u i o ö p ñ
+a ä s ş d f g ğ h j k l
+⇧ z x c v b n m ū ü ı ⌫
+123 🌐 Qazaq. ⏎
 
+
+Shift / Caps:
+
+Q W E R T Y U İ O Ö P Ñ
+A Ä S Ş D F G Ğ H J K L
+⇧ Z X C V B N M Ū Ü I ⌫
+
+
+Numbers / symbols (`123`):
+
+1 2 3 4 5 6 7 8 9 0
+- /:; ( ) £ & @ "
+#+=., ? ! ' ⌫
+ABC 🌐 Qazaq ⏎
+
+
+More symbols (`#+=`):
+
+[ ] { } # % ^ * + =
+_ \ | ~ < > € ¥ $ ¢
+123., ? ! ' ⌫
+ABC 🌐 Qazaq ⏎
+
+
+### The alphabet — 31 letters
+
+The red letters in the official table are the ones that are different from English. Those are all on this keyboard.
+
+| № | Letter | Sound |
+| --- | --- | --- |
+| 1 | A a | [a] |
+| 2 | Ä ä | [ә] |
+| 3 | B b | [б] |
+| 4 | D d | [д] |
+| 5 | E e | [e] |
+| 6 | F f | [ф] |
+| 7 | G g | [г] |
+| 8 | Ğ ğ | [ғ] |
+| 9 | H h | [х], [h] |
+| 10 | İ i | [и], [й] |
+| 11 | I ı | [і] |
+| 12 | J j | [ж] |
+| 13 | K k | [к] |
+| 14 | L l | [л] |
+| 15 | M m | [м] |
+| 16 | N n | [н] |
+| 17 | Ñ ñ | [ң] |
+| 18 | O o | [o] |
+| 19 | Ö ö | [ө] |
+| 20 | P p | [п] |
+| 21 | Q q | [қ] |
+| 22 | R r | [р] |
+| 23 | S s | [с] |
+| 24 | Ş ş | [ш] |
+| 25 | T t | [т] |
+| 26 | U u | [у] |
+| 27 | Ū ū | [ұ] |
+| 28 | Ü ü | [ү] |
+| 29 | V v | [в] |
+| 30 | Y y | [ы] |
+| 31 | Z z | [з] |
 
 - `I` = dotless ı (like in Kazakh)
 - `İ` = dotted i
 - `Ū` = long U
-
-Layout is alphabetical, not QWERTY — so you can find letters fast.
 
 ---
 
@@ -32,17 +93,13 @@ You need 2 apps, both free:
 
 ### Steps
 
-1. Go to this repo on GitHub → click **Actions** (top menu)
-2. Click the latest green run (✅)
-3. Scroll to the bottom → **Artifacts** → download `qazaq_latin_n.kmp`
-4. On your iPhone, open **Files** → **Downloads** → find `qazaq_latin_n.kmp`
-5. Long-press the file → **Uncompress** — this makes a new file inside
-6. Tap the new inner `.kmp` file → **Open in Keyman** → **Install**
-7. Go to iPhone **Settings → General → Keyboard → Keyboards → Add New Keyboard → Keyman**
-8. Turn on **Allow Full Access** for Keyman (it needs this to show custom keyboards)
-9. Open any app (Messages, Notes) → long-press the 🌐 globe → pick **Qazaq Latin N**
+1. Tap the install link at the top of this file: **Tap here to install Qazaq**
+2. Tap **Open in Keyman** → **Install**
+3. Go to iPhone **Settings → General → Keyboard → Keyboards → Add New Keyboard → Keyman**
+4. Turn on **Allow Full Access** for Keyman (it needs this to show custom keyboards)
+5. Open any app (Messages, Notes) → long-press the 🌐 globe → pick **Qazaq**
 
-Done. You should see `A Ä B D E F G Ğ` on the first row.
+Done. You should see `q w e r t y u i o ö p ñ` on the first row.
 
 > If you still see a normal English keyboard, you installed an old version.
 > Delete the keyboard inside the Keyman app, then install the new `.kmp` again.
@@ -55,30 +112,35 @@ Done. You should see `A Ä B D E F G Ğ` on the first row.
 There are only 2 files that matter. Everything else is auto-generated.
 
 ### 1. Change what the keys LOOK like
-File: `qazaq_latin_n.keyman-touch-layout`
+File: `qazaq.keyman-touch-layout`
 
 This is the visual layout — what letters are on which buttons, in which order.
 
 Example — a key looks like this:
-{"id": "K_AUML", "text": "Ä"}
+{"id": "K_Q", "text": "q", "width": "102.083"}
 
 - `id` = which key it is (don't change this unless you know what you're doing)
 - `text` = what is written on the button
+- `width` = how wide the button is. All keys in a row must add up to `1225`, or the row will stretch / leave gaps.
 
 2. Change what the keys TYPE
-File: `qazaq_latin_n.kmn`
+File: `qazaq.kmn`
 
 This is the brain — what character comes out when you press a key.
 
 Example:
 
-+ [K_AUML] > 'Ä'
-+ [SHIFT K_AUML] > 'ä'
++ [NCAPS K_Q] > 'q'
++ [SHIFT NCAPS K_Q] > 'Q'
++ [CAPS K_Q] > 'Q'
++ [SHIFT CAPS K_Q] > 'q'
 
-- First line = what happens when you press it normally
-- Second line = what happens when you press it with Shift (⇧)
+- First line = normal press
+- Second line = Shift
+- Third line = Caps Lock
+- Fourth line = Shift + Caps Lock (= lowercase again, like a real keyboard)
 
-*Rule: If you change a key in one file, change it in the other too.*
+_Rule: If you change a key in one file, change it in the other too._
 They have to match, or Keyman will show English instead.
 
 ---
@@ -88,10 +150,10 @@ How to build a new version
 You don't need to install anything. GitHub does it for you.
 
 1. Edit the 2 files above in GitHub (pencil icon ✏️)
-2. Click *Commit changes*
+2. Click _Commit changes_
 3. Wait 1-2 minutes
-4. Go to *Actions* → latest run should be green ✅
-5. Download the new `.kmp` from *Artifacts* at the bottom
+4. Go to _Actions_ → latest run should be green ✅
+5. Download the new `.kmp` from _Releases_ at the top, or from _Artifacts_ at the bottom of the run
 6. Install it like above
 
 If Actions goes red ❌, click the failed run → click the red step → screenshot the error and send it to whoever made this repo.
@@ -101,8 +163,8 @@ If Actions goes red ❌, click the failed run → click the red step → screens
 Files in this repo
 
 File	What it is	Should you touch it?
-`qazaq_latin_n.kmn`	What keys type	✅ Yes, this is your keyboard logic
-`qazaq_latin_n.keyman-touch-layout`	What keys look like	✅ Yes, this is your keyboard design
+`qazaq.kmn`	What keys type	✅ Yes, this is your keyboard logic
+`qazaq.keyman-touch-layout`	What keys look like	✅ Yes, this is your keyboard design
 `.github/workflows/build.yml`	Auto-builds the keyboard on GitHub	❌ No, unless build breaks
 `README.md`	This file	✅ Yes
 Everything else	Auto-generated by GitHub	❌ No
@@ -111,21 +173,20 @@ Everything else	Auto-generated by GitHub	❌ No
 
 Troubleshooting
 
-*It installed but shows English keyboard*
-→ You installed an old `.kmp`. Delete it in Keyman app → download the newest one from Actions → install again.
+_It installed but shows English keyboard_
+→ You installed an old `.kmp`. Delete it in Keyman app → download the newest one from Releases → install again.
 
-*I pressed Ä but got A*
-→ Your `.kmn` and touch layout don't match. Check that both have the same `K_AUML` id.
+_I pressed Ä but got A_
+→ Your `.kmn` and touch layout don't match. Check that both have the same id, e.g. `U_00C4` for `Ä`.
 
-*Actions is red*
-→ Click the run, screenshot the error. Usually it's a typo — a missing comma `,` or quote `"` in the touch layout file.
+_Actions is red_
+→ Click the run, screenshot the error. Usually it's a typo — a missing comma `,` or quote `"` in the touch layout file, or a `KM020AD` warning (a plain rule missing `NCAPS`).
 
-*Keyboard doesn't show up in the 🌐 list*
+_Keyboard doesn't show up in the 🌐 list_
 → Settings → General → Keyboard → Keyboards → Add New Keyboard → Keyman → turn on Allow Full Access.
 
 ---
 
-Made for writing Kazakh in Latin script. Qazaq Latin N.
+Made for writing Kazakh in Latin script. Qazaq.
 
 
-Paste → Commit → done.
