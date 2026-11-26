@@ -62,7 +62,9 @@
             "key": [
               { "id": "K_NUMLOCK", "text": "123", "sp": "1", "width": "100", "nextlayer": "numeric" },
               { "id": "K_LOPT", "text": "🌐", "sp": "1", "width": "100" },
-              { "id": "K_SPACE", "text": "Qazaq", "width": "825" },
+              { "id": "K_LEFT", "text": "◀", "width": "100" },
+              { "id": "K_RIGHT", "text": "▶", "width": "100" },
+              { "id": "K_SPACE", "text": "Qazaq", "width": "625" },
               { "id": "K_PERIOD", "text": ".", "width": "100" },
               { "id": "K_ENTER", "text": "⏎", "sp": "1", "width": "100" }
             ]
@@ -128,7 +130,9 @@
             "key": [
               { "id": "K_NUMLOCK", "text": "123", "sp": "1", "width": "100", "nextlayer": "numeric" },
               { "id": "K_LOPT", "text": "🌐", "sp": "1", "width": "100" },
-              { "id": "K_SPACE", "text": "Qazaq", "width": "825" },
+              { "id": "K_LEFT", "text": "◀", "width": "100" },
+              { "id": "K_RIGHT", "text": "▶", "width": "100" },
+              { "id": "K_SPACE", "text": "Qazaq", "width": "625" },
               { "id": "K_COMMA", "text": ",", "width": "100" },
               { "id": "K_ENTER", "text": "⏎", "sp": "1", "width": "100" }
             ]
@@ -194,7 +198,9 @@
             "key": [
               { "id": "K_NUMLOCK", "text": "123", "sp": "1", "width": "100", "nextlayer": "numeric" },
               { "id": "K_LOPT", "text": "🌐", "sp": "1", "width": "100" },
-              { "id": "K_SPACE", "text": "Qazaq", "width": "825" },
+              { "id": "K_LEFT", "text": "◀", "width": "100" },
+              { "id": "K_RIGHT", "text": "▶", "width": "100" },
+              { "id": "K_SPACE", "text": "Qazaq", "width": "625" },
               { "id": "K_COMMA", "text": ",", "width": "100" },
               { "id": "K_ENTER", "text": "⏎", "sp": "1", "width": "100" }
             ]
@@ -251,7 +257,9 @@
             "key": [
               { "id": "K_NUMLOCK", "text": "ABC", "sp": "1", "width": "175", "nextlayer": "default" },
               { "id": "K_LOPT", "text": "🌐", "sp": "1", "width": "150" },
-              { "id": "K_SPACE", "text": "Qazaq", "width": "650" },
+              { "id": "K_LEFT", "text": "◀", "width": "100" },
+              { "id": "K_RIGHT", "text": "▶", "width": "100" },
+              { "id": "K_SPACE", "text": "Qazaq", "width": "450" },
               { "id": "K_ENTER", "text": "⏎", "sp": "1", "width": "250" }
             ]
           }
@@ -307,7 +315,9 @@
             "key": [
               { "id": "K_NUMLOCK", "text": "ABC", "sp": "1", "width": "175", "nextlayer": "default" },
               { "id": "K_LOPT", "text": "🌐", "sp": "1", "width": "150" },
-              { "id": "K_SPACE", "text": "Qazaq", "width": "650" },
+              { "id": "K_LEFT", "text": "◀", "width": "100" },
+              { "id": "K_RIGHT", "text": "▶", "width": "100" },
+              { "id": "K_SPACE", "text": "Qazaq", "width": "450" },
               { "id": "K_ENTER", "text": "⏎", "sp": "1", "width": "250" }
             ]
           }
