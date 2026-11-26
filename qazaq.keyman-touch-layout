@@ -110,7 +110,7 @@
           {
             "id": 3,
             "key": [
-              { "id": "K_SHIFT", "text": "⇧", "sp": "1", "width": "102.083", "nextlayer": "default" },
+              { "id": "K_SHIFT", "text": "⇧", "sp": "1", "width": "102.083", "nextlayer": "caps" },
               { "id": "K_Z", "text": "Z", "width": "102.083" },
               { "id": "K_X", "text": "X", "width": "102.083" },
               { "id": "K_C", "text": "C", "width": "102.083" },
