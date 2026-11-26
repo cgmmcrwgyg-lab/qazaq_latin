@@ -9,7 +9,7 @@
           {
             "id": 1,
             "key": [
-              { "id": "K_Q", "text": "q", "sp": "2" },
+              { "id": "K_Q", "text": "q" },
               { "id": "K_E", "text": "e" },
               { "id": "K_R", "text": "r" },
               { "id": "K_T", "text": "t" },
@@ -18,7 +18,7 @@
               { "id": "U_0130", "text": "i" },
               { "id": "K_O", "text": "o" },
               { "id": "U_00D6", "text": "ö" },
-              { "id": "K_P", "text": "p", "sp": "2" }
+              { "id": "K_P", "text": "p" }
             ]
           },
           {
@@ -41,7 +41,7 @@
           {
             "id": 3,
             "key": [
-              { "id": "K_SHIFT", "text": "⇧", "sp": "1" },
+              { "id": "K_SHIFT", "text": "⇧" },
               { "id": "K_Z", "text": "z" },
               { "id": "K_V", "text": "v" },
               { "id": "K_B", "text": "b" },
@@ -51,7 +51,7 @@
               { "id": "U_016A", "text": "ū" },
               { "id": "U_00DC", "text": "ü" },
               { "id": "K_I", "text": "ı" },
-              { "id": "K_BKSP", "text": "⌫", "sp": "2" }
+              { "id": "K_BKSP", "text": "⌫" }
             ]
           },
           {
@@ -59,7 +59,7 @@
             "key": [
               { "id": "K_NUMLOCK", "text": "123", "sp": "1", "nextlayer": "numeric" },
               { "id": "K_LOPT", "text": "🌐", "sp": "1" },
-              { "id": "K_SPACE", "text": "", "sp": "7" },
+              { "id": "K_SPACE", "text": "Qazaq", "sp": "7" },
               { "id": "K_PERIOD", "text": ".", "sp": "1" },
               { "id": "K_ENTER", "text": "⏎", "sp": "2" }
             ]
@@ -72,7 +72,7 @@
           {
             "id": 1,
             "key": [
-              { "id": "K_Q", "text": "Q", "sp": "2" },
+              { "id": "K_Q", "text": "Q" },
               { "id": "K_E", "text": "E" },
               { "id": "K_R", "text": "R" },
               { "id": "K_T", "text": "T" },
@@ -81,7 +81,7 @@
               { "id": "U_0130", "text": "İ" },
               { "id": "K_O", "text": "O" },
               { "id": "U_00D6", "text": "Ö" },
-              { "id": "K_P", "text": "P", "sp": "2" }
+              { "id": "K_P", "text": "P" }
             ]
           },
           {
@@ -104,7 +104,7 @@
           {
             "id": 3,
             "key": [
-              { "id": "K_SHIFT", "text": "⇧", "sp": "1" },
+              { "id": "K_SHIFT", "text": "⇧" },
               { "id": "K_Z", "text": "Z" },
               { "id": "K_V", "text": "V" },
               { "id": "K_B", "text": "B" },
@@ -114,7 +114,7 @@
               { "id": "U_016A", "text": "Ū" },
               { "id": "U_00DC", "text": "Ü" },
               { "id": "K_I", "text": "I" },
-              { "id": "K_BKSP", "text": "⌫", "sp": "2" }
+              { "id": "K_BKSP", "text": "⌫" }
             ]
           },
           {
@@ -122,7 +122,7 @@
             "key": [
               { "id": "K_NUMLOCK", "text": "123", "sp": "1", "nextlayer": "numeric" },
               { "id": "K_LOPT", "text": "🌐", "sp": "1" },
-              { "id": "K_SPACE", "text": "", "sp": "7" },
+              { "id": "K_SPACE", "text": "Qazaq", "sp": "7" },
               { "id": "K_COMMA", "text": ",", "sp": "1" },
               { "id": "K_ENTER", "text": "⏎", "sp": "2" }
             ]
@@ -168,7 +168,7 @@
               { "id": "K_NUMLOCK", "text": "ABC", "sp": "2", "nextlayer": "default" },
               { "id": "K_LOPT", "text": "🌐", "sp": "1" },
               { "id": "K_COMMA", "text": ",", "sp": "1" },
-              { "id": "K_SPACE", "text": "", "sp": "2" },
+              { "id": "K_SPACE", "text": "Qazaq", "sp": "2" },
               { "id": "K_PERIOD", "text": ".", "sp": "1" },
               { "id": "K_BKSP", "text": "⌫", "sp": "1" },
               { "id": "K_ENTER", "text": "⏎", "sp": "2" }
