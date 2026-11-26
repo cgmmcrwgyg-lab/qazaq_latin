@@ -8,12 +8,6 @@ begin Unicode > use(main)
 
 group(main) using keys
 
-c Arrow keys - move cursor, Shift + arrow = select
-+ [NCAPS K_LEFT] > use(K_LEFT)
-+ [NCAPS K_RIGHT] > use(K_RIGHT)
-+ [SHIFT NCAPS K_LEFT] > use(SHIFT K_LEFT)
-+ [SHIFT NCAPS K_RIGHT] > use(SHIFT K_RIGHT)
-
 c Double-space = period + space, like Apple
 + ' ' [NCAPS K_SPACE] > '.' ' '
 
