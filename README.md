@@ -2,7 +2,7 @@
 > 📲 **iPhone install:** [Tap here to install Qazaq](https://github.com/cgmmcrwgyg-lab/qazaq_latin/releases/latest/download/qazaq.kmp) → tap **Open in Keyman** → **Install**
 
 <p align="center">
-  <img src="screenshot.png" width="320" alt="Qazaq keyboard on iPhone">
+  <img src="IMG-0971.jpeg" width="320" alt="Qazaq keyboard on iPhone"> 
 </p>
 
 # Qazaq 🇰🇿
