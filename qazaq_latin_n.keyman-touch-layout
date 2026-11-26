@@ -75,6 +75,72 @@
           {
             "id": 1,
             "key": [
+              { "id": "K_Q", "text": "Q", "width": "100", "pad": "25", "nextlayer": "default" },
+              { "id": "K_W", "text": "W", "width": "100", "nextlayer": "default" },
+              { "id": "K_E", "text": "E", "width": "100", "nextlayer": "default" },
+              { "id": "K_R", "text": "R", "width": "100", "nextlayer": "default" },
+              { "id": "K_T", "text": "T", "width": "100", "nextlayer": "default" },
+              { "id": "K_Y", "text": "Y", "width": "100", "nextlayer": "default" },
+              { "id": "K_U", "text": "U", "width": "100", "nextlayer": "default" },
+              { "id": "U_0130", "text": "İ", "width": "100", "nextlayer": "default" },
+              { "id": "K_O", "text": "O", "width": "100", "nextlayer": "default" },
+              { "id": "U_00D6", "text": "Ö", "width": "100", "nextlayer": "default" },
+              { "id": "K_P", "text": "P", "width": "100", "nextlayer": "default" },
+              { "id": "U_00D1", "text": "Ñ", "width": "100", "nextlayer": "default" }
+            ]
+          },
+          {
+            "id": 2,
+            "key": [
+              { "id": "K_A", "text": "A", "width": "100", "pad": "25", "nextlayer": "default" },
+              { "id": "U_00C4", "text": "Ä", "width": "100", "nextlayer": "default" },
+              { "id": "K_S", "text": "S", "width": "100", "nextlayer": "default" },
+              { "id": "U_015E", "text": "Ş", "width": "100", "nextlayer": "default" },
+              { "id": "K_D", "text": "D", "width": "100", "nextlayer": "default" },
+              { "id": "K_F", "text": "F", "width": "100", "nextlayer": "default" },
+              { "id": "K_G", "text": "G", "width": "100", "nextlayer": "default" },
+              { "id": "U_011E", "text": "Ğ", "width": "100", "nextlayer": "default" },
+              { "id": "K_H", "text": "H", "width": "100", "nextlayer": "default" },
+              { "id": "K_J", "text": "J", "width": "100", "nextlayer": "default" },
+              { "id": "K_K", "text": "K", "width": "100", "nextlayer": "default" },
+              { "id": "K_L", "text": "L", "width": "100", "nextlayer": "default" }
+            ]
+          },
+          {
+            "id": 3,
+            "key": [
+              { "id": "K_SHIFT", "text": "⇧", "sp": "1", "width": "150", "nextlayer": "default" },
+              { "id": "K_Z", "text": "Z", "width": "100", "nextlayer": "default" },
+              { "id": "K_X", "text": "X", "width": "100", "nextlayer": "default" },
+              { "id": "K_C", "text": "C", "width": "100", "nextlayer": "default" },
+              { "id": "K_V", "text": "V", "width": "100", "nextlayer": "default" },
+              { "id": "K_B", "text": "B", "width": "100", "nextlayer": "default" },
+              { "id": "K_N", "text": "N", "width": "100", "nextlayer": "default" },
+              { "id": "K_M", "text": "M", "width": "100", "nextlayer": "default" },
+              { "id": "U_016A", "text": "Ū", "width": "100", "nextlayer": "default" },
+              { "id": "U_00DC", "text": "Ü", "width": "100", "nextlayer": "default" },
+              { "id": "K_I", "text": "I", "width": "100", "nextlayer": "default" },
+              { "id": "K_BKSP", "text": "⌫", "sp": "1", "width": "75" }
+            ]
+          },
+          {
+            "id": 4,
+            "key": [
+              { "id": "K_NUMLOCK", "text": "123", "sp": "1", "width": "100", "nextlayer": "numeric" },
+              { "id": "K_LOPT", "text": "🌐", "sp": "1", "width": "100" },
+              { "id": "K_SPACE", "text": "Qazaq", "width": "825" },
+              { "id": "K_COMMA", "text": ",", "width": "100" },
+              { "id": "K_ENTER", "text": "⏎", "sp": "1", "width": "100" }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "caps",
+        "row": [
+          {
+            "id": 1,
+            "key": [
               { "id": "K_Q", "text": "Q", "width": "100", "pad": "25" },
               { "id": "K_W", "text": "W", "width": "100" },
               { "id": "K_E", "text": "E", "width": "100" },
@@ -109,7 +175,7 @@
           {
             "id": 3,
             "key": [
-              { "id": "K_SHIFT", "text": "⇧", "sp": "2", "width": "150" },
+              { "id": "K_SHIFT", "text": "⇪", "sp": "2", "width": "150", "nextlayer": "default" },
               { "id": "K_Z", "text": "Z", "width": "100" },
               { "id": "K_X", "text": "X", "width": "100" },
               { "id": "K_C", "text": "C", "width": "100" },
