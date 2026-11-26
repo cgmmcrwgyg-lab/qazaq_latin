@@ -18,17 +18,17 @@ jobs:
         run: |
           mkdir -p /tmp/template
           cd /tmp/template
-          kmc generate keyman-keyboard qazaq_latin_n --name "Qazaq Latin N" --language kk || kmc generate keyman-keyboard qazaq_latin_n
+          kmc generate keyman-keyboard qazaq --name "Qazaq" --language kk || kmc generate keyman-keyboard qazaq
           ls -R
 
       - name: Copy template + your keyboard files
         run: |
-          cp /tmp/template/qazaq_latin_n/qazaq_latin_n.kpj ./ || cp /tmp/template/qazaq_latin_n.kpj ./
+          cp /tmp/template/qazaq/qazaq.kpj ./ || cp /tmp/template/qazaq.kpj ./
           mkdir -p source
-          cp /tmp/template/qazaq_latin_n/source/* ./source/ 2>/dev/null || cp /tmp/template/qazaq_latin_n/source/* . 2>/dev/null || true
-          cp qazaq_latin_n.kmn ./source/qazaq_latin_n.kmn
-          cp qazaq_latin_n.keyman-touch-layout ./source/qazaq_latin_n.keyman-touch-layout
-          echo "# Qazaq Latin N" > LICENSE.md
+          cp /tmp/template/qazaq/source/* ./source/ 2>/dev/null || cp /tmp/template/qazaq/source/* . 2>/dev/null || true
+          cp qazaq.kmn ./source/qazaq.kmn
+          cp qazaq.keyman-touch-layout ./source/qazaq.keyman-touch-layout
+          echo "# Qazaq" > LICENSE.md
           echo "MIT License - Qazaq Translit" >> LICENSE.md
           ls -R
 
@@ -36,7 +36,7 @@ jobs:
         run: |
           python3 - << 'PY'
           import xml.etree.ElementTree as ET, pathlib
-          p = pathlib.Path("source/qazaq_latin_n.kps")
+          p = pathlib.Path("source/qazaq.kps")
           tree = ET.parse(p)
           root = tree.getroot()
           # Remove any <File> that references .kvk / .kvks - delete the whole block, not just one line
@@ -49,7 +49,7 @@ jobs:
           tree.write(p, encoding="utf-8", xml_declaration=True)
           print(p.read_text())
           # Add KeyboardVersion if missing
-          kmn = pathlib.Path("source/qazaq_latin_n.kmn")
+          kmn = pathlib.Path("source/qazaq.kmn")
           t = kmn.read_text()
           if "keyboardversion" not in t.lower():
               lines = t.splitlines()
@@ -61,7 +61,7 @@ jobs:
           ls -R source/
 
       - name: Build project
-        run: kmc build qazaq_latin_n.kpj
+        run: kmc build qazaq.kpj
 
       - name: Find build output
         run: |
@@ -72,7 +72,7 @@ jobs:
 
       - uses: actions/upload-artifact@v4
         with:
-          name: qazaq_latin_n.kmp
+          name: qazaq.kmp
           path: "**/*.kmp"
           if-no-files-found: error
 
@@ -81,15 +81,6 @@ jobs:
         with:
           tag_name: latest
           name: Latest build
+          body: "Latest build of Qazaq. Tap qazaq.kmp → Open in Keyman → Install."
           files: "**/*.kmp"
           fail_on_unmatched_files: true
-
-      - name: Release latest
-        uses: softprops/action-gh-release@v2
-        with:
-          tag_name: latest
-          name: Latest build
-          files: |
-            build/qazaq_latin_n.kmp
-            qazaq_latin_n.kmp
-          fail_on_unmatched_files: false
