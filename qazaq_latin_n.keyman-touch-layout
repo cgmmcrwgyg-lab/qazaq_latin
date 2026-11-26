@@ -43,7 +43,7 @@
           {
             "id": 3,
             "key": [
-              { "id": "K_SHIFT", "text": "⇧", "sp": "1", "width": "150", "nextlayer": "shift" },
+              { "id": "K_SHIFT", "text": "⇧", "sp": "1", "width": "75", "nextlayer": "shift" },
               { "id": "K_Z", "text": "z", "width": "100" },
               { "id": "K_X", "text": "x", "width": "100" },
               { "id": "K_C", "text": "c", "width": "100" },
@@ -54,7 +54,7 @@
               { "id": "U_016A", "text": "ū", "width": "100" },
               { "id": "U_00DC", "text": "ü", "width": "100" },
               { "id": "K_I", "text": "ı", "width": "100" },
-              { "id": "K_BKSP", "text": "⌫", "sp": "1", "width": "75" }
+              { "id": "K_BKSP", "text": "⌫", "sp": "1", "width": "150" }
             ]
           },
           {
@@ -109,7 +109,7 @@
           {
             "id": 3,
             "key": [
-              { "id": "K_SHIFT", "text": "⇧", "sp": "1", "width": "150", "nextlayer": "default" },
+              { "id": "K_SHIFT", "text": "⇧", "sp": "1", "width": "75", "nextlayer": "default" },
               { "id": "K_Z", "text": "Z", "width": "100", "nextlayer": "default" },
               { "id": "K_X", "text": "X", "width": "100", "nextlayer": "default" },
               { "id": "K_C", "text": "C", "width": "100", "nextlayer": "default" },
@@ -120,7 +120,7 @@
               { "id": "U_016A", "text": "Ū", "width": "100", "nextlayer": "default" },
               { "id": "U_00DC", "text": "Ü", "width": "100", "nextlayer": "default" },
               { "id": "K_I", "text": "I", "width": "100", "nextlayer": "default" },
-              { "id": "K_BKSP", "text": "⌫", "sp": "1", "width": "75" }
+              { "id": "K_BKSP", "text": "⌫", "sp": "1", "width": "150" }
             ]
           },
           {
@@ -175,7 +175,7 @@
           {
             "id": 3,
             "key": [
-              { "id": "K_SHIFT", "text": "⇪", "sp": "2", "width": "150", "nextlayer": "default" },
+              { "id": "K_SHIFT", "text": "⇪", "sp": "2", "width": "75", "nextlayer": "default" },
               { "id": "K_Z", "text": "Z", "width": "100" },
               { "id": "K_X", "text": "X", "width": "100" },
               { "id": "K_C", "text": "C", "width": "100" },
@@ -186,7 +186,7 @@
               { "id": "U_016A", "text": "Ū", "width": "100" },
               { "id": "U_00DC", "text": "Ü", "width": "100" },
               { "id": "K_I", "text": "I", "width": "100" },
-              { "id": "K_BKSP", "text": "⌫", "sp": "1", "width": "75" }
+              { "id": "K_BKSP", "text": "⌫", "sp": "1", "width": "150" }
             ]
           },
           {
@@ -239,13 +239,14 @@
           {
             "id": 3,
             "key": [
-              { "id": "K_SYMBOLS", "text": "#+=", "sp": "1", "width": "150", "nextlayer": "symbol" },
-              { "id": "K_PERIOD", "text": ".", "width": "200" },
-              { "id": "K_COMMA", "text": ",", "width": "200" },
-              { "id": "U_003F", "text": "?", "width": "200" },
-              { "id": "U_0021", "text": "!", "width": "200" },
-              { "id": "U_0027", "text": "'", "width": "200" },
-              { "id": "K_BKSP", "text": "⌫", "sp": "1", "width": "75" }
+              { "id": "K_SYMBOLS", "text": "#+=", "sp": "1", "width": "100", "pad": "262", "nextlayer": "symbol" },
+              { "id": "K_PERIOD", "text": ".", "width": "100" },
+              { "id": "K_COMMA", "text": ",", "width": "100" },
+              { "id": "U_003F", "text": "?", "width": "100" },
+              { "id": "U_0021", "text": "!", "width": "100" },
+              { "id": "U_0027", "text": "'", "width": "100" },
+              { "id": "K_BKSP", "text": "⌫", "sp": "1", "width": "100" },
+              { "id": "U_0020", "text": "", "sp": "10", "width": "263" }
             ]
           },
           {
@@ -297,13 +298,14 @@
           {
             "id": 3,
             "key": [
-              { "id": "K_NUMLOCK", "text": "123", "sp": "1", "width": "150", "nextlayer": "numeric" },
-              { "id": "K_PERIOD", "text": ".", "width": "200" },
-              { "id": "K_COMMA", "text": ",", "width": "200" },
-              { "id": "U_003F", "text": "?", "width": "200" },
-              { "id": "U_0021", "text": "!", "width": "200" },
-              { "id": "U_0027", "text": "'", "width": "200" },
-              { "id": "K_BKSP", "text": "⌫", "sp": "1", "width": "75" }
+              { "id": "K_NUMLOCK", "text": "123", "sp": "1", "width": "100", "pad": "262", "nextlayer": "numeric" },
+              { "id": "K_PERIOD", "text": ".", "width": "100" },
+              { "id": "K_COMMA", "text": ",", "width": "100" },
+              { "id": "U_003F", "text": "?", "width": "100" },
+              { "id": "U_0021", "text": "!", "width": "100" },
+              { "id": "U_0027", "text": "'", "width": "100" },
+              { "id": "K_BKSP", "text": "⌫", "sp": "1", "width": "100" },
+              { "id": "U_0020", "text": "", "sp": "10", "width": "263" }
             ]
           },
           {
