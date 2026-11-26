@@ -43,7 +43,7 @@
           {
             "id": 3,
             "key": [
-              { "id": "K_SHIFT", "text": "⇧", "sp": "1", "width": "150" },
+              { "id": "K_SHIFT", "text": "⇧", "sp": "1", "width": "150", "nextlayer": "shift" },
               { "id": "K_Z", "text": "z", "width": "100" },
               { "id": "K_X", "text": "x", "width": "100" },
               { "id": "K_C", "text": "c", "width": "100" },
@@ -109,7 +109,7 @@
           {
             "id": 3,
             "key": [
-              { "id": "K_SHIFT", "text": "⇧", "sp": "1", "width": "150" },
+              { "id": "K_SHIFT", "text": "⇧", "sp": "2", "width": "150", "nextlayer": "default" },
               { "id": "K_Z", "text": "Z", "width": "100" },
               { "id": "K_X", "text": "X", "width": "100" },
               { "id": "K_C", "text": "C", "width": "100" },
