@@ -63,15 +63,26 @@ jobs:
       - name: Build project
         run: kmc build qazaq_latin_n.kpj
 
-      - name: List build output
-        run: ls -R build || ls -R
+      - name: Find build output
+        run: |
+          echo "--- ALL FILES ---"
+          find . -type f | sort
+          echo "--- KMP / KMX ---"
+          find . -name "*.kmp" -o -name "*.kmx" | sort
 
       - uses: actions/upload-artifact@v4
         with:
           name: qazaq_latin_n.kmp
-          path: |
-            build/qazaq_latin_n.kmp
-            qazaq_latin_n.kmp
+          path: "**/*.kmp"
+          if-no-files-found: error
+
+      - name: Release latest
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: latest
+          name: Latest build
+          files: "**/*.kmp"
+          fail_on_unmatched_files: true
 
       - name: Release latest
         uses: softprops/action-gh-release@v2
