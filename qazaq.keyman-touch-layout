@@ -62,8 +62,9 @@
             "key": [
               { "id": "K_NUMLOCK", "text": "123", "sp": "1", "width": "100", "nextlayer": "numeric" },
               { "id": "K_LOPT", "text": "🌐", "sp": "1", "width": "100" },
-              { "id": "K_SPACE", "text": "Qazaq", "width": "825" },
+              { "id": "K_SPACE", "text": "Qazaq", "width": "725" },
               { "id": "U_002E", "text": ".", "width": "100" },
+              { "id": "K_SHIFT", "text": "⇧", "sp": "1", "width": "100", "nextlayer": "shift" },
               { "id": "K_ENTER", "text": "⏎", "sp": "1", "width": "100" }
             ]
           }
@@ -128,8 +129,9 @@
             "key": [
               { "id": "K_NUMLOCK", "text": "123", "sp": "1", "width": "100", "nextlayer": "numeric" },
               { "id": "K_LOPT", "text": "🌐", "sp": "1", "width": "100" },
-              { "id": "K_SPACE", "text": "Qazaq", "width": "825" },
+              { "id": "K_SPACE", "text": "Qazaq", "width": "725" },
               { "id": "U_002C", "text": ",", "width": "100" },
+              { "id": "K_SHIFT", "text": "⇧", "sp": "1", "width": "100", "nextlayer": "default" },
               { "id": "K_ENTER", "text": "⏎", "sp": "1", "width": "100" }
             ]
           }
@@ -194,8 +196,9 @@
             "key": [
               { "id": "K_NUMLOCK", "text": "123", "sp": "1", "width": "100", "nextlayer": "numeric" },
               { "id": "K_LOPT", "text": "🌐", "sp": "1", "width": "100" },
-              { "id": "K_SPACE", "text": "Qazaq", "width": "825" },
+              { "id": "K_SPACE", "text": "Qazaq", "width": "725" },
               { "id": "U_002C", "text": ",", "width": "100" },
+              { "id": "K_SHIFT", "text": "⇪", "sp": "2", "width": "100", "nextlayer": "default" },
               { "id": "K_ENTER", "text": "⏎", "sp": "1", "width": "100" }
             ]
           }
