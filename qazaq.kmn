@@ -23,9 +23,12 @@ if(&newLayer = "") > use(detectStartOfSentence)
 group(detectStartOfSentence) readonly
 store(sentencePunctuation) '.?!'
 store(whitespace) ' ' U+00A0 U+000D U+000A U+0009
+store(newline) U+000A U+000D
 nul > layer('shift')
+any(newline) > layer('shift')
 any(sentencePunctuation) any(whitespace) > layer('shift')
 any(sentencePunctuation) any(whitespace) any(whitespace) > layer('shift')
+any(sentencePunctuation) any(newline) > layer('shift')
 nomatch > layer('default')
 
 group(main) using keys
